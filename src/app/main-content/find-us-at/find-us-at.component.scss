@@ -1,0 +1,45 @@
+section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  iframe {
+    margin-top: 64px;
+    width: 100%;
+  }
+
+  h1 {
+    color: #9f0908;
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 24px;
+      width: 24px;
+    }
+    p {
+      font-family: "Raleway";
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    > h1 {
+      font-size: 48px;
+    }
+
+    > div {
+      > p {
+        font-size: 16px;
+      }
+    }
+  }
+}

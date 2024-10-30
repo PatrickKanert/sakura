@@ -1,0 +1,43 @@
+section {
+  padding: 0px 64px;
+  height: 144px;
+  background-color: #0a141e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 100ms ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+      color: #9f0908;
+    }
+  }
+
+  > img {
+    height: 44px;
+  }
+
+  > div {
+    display: flex;
+    gap: 24px;
+    > a {
+      > img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    padding: 0px 24px;
+    > img {
+      display: none;
+    }
+  }
+}
