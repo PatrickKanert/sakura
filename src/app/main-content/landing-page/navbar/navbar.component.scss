@@ -1,3 +1,11 @@
+@mixin darkRed() {
+  color: #9f0908;
+}
+
+@mixin fontColor() {
+  color: white;
+}
+
 nav {
   padding: 32px;
   display: flex;
@@ -14,7 +22,7 @@ nav {
 
     > a {
       &:hover {
-        color: #9f0908;
+        @include darkRed();
       }
     }
     > button {
@@ -43,7 +51,7 @@ a {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  @include fontColor();
 }
 
 @media (max-width: 900px) {
